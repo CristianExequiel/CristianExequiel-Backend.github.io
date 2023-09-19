@@ -86,8 +86,8 @@
     echo "<br>";
 
     //Datos del círculo
-    $radioCirculo = 30; // en centímetros
-    $pi = 3.1415; // Valor aproximado de pi
+    $radioCirculo = 30;
+    $pi = 3.1415;
 
     //Calculo el área del círculo
     $areaCirculo = $pi * ($radioCirculo ** 2);
