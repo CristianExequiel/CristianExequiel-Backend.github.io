@@ -89,12 +89,12 @@
     $radioCirculo = 30; // en centímetros
     $pi = 3.1415; // Valor aproximado de pi
 
-    // Calcula el área del círculo
+    //Calculo el área del círculo
     $areaCirculo = $pi * ($radioCirculo ** 2);
     echo "Área: " . $areaCirculo;
     echo "<br>";
 
-    // Calcula el perímetro del círculo (también conocido como circunferencia)
+    //Calculo el perímetro del círculo
     $perimetroCirculo = 2 * $pi * $radioCirculo;
     echo "Perímetro: " . $perimetroCirculo;
     echo "<br>";
