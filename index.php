@@ -1,103 +1,48 @@
 <?php
-    echo "Hola Mundo!";
-        // Comentario de una sola linea
-    /* Comentario 
-    de varias lineas
-    */
-    echo "<br>";
+//Clase 4
+//Ejercicio N°1
+$n1 = -5;
+    //utilizar parenteiss
+if ($n1 > 0) {
+    echo "El numero ingresado es un numero positivo" . "<br>";
+}
 
-    // Creo mi primera variable
-    $variable = "Hola mundo"; // Operacion de ASIGNACION
-    echo $variable; //Muestro el contenido de la variable
-    echo"<br>";
+//Ejercicio N°2
+$n2 = 2;
+   
+if ($n2 > 1 && $n2 < 10) {
+    echo "El numero ingresado es mayor que 1 y menor que 10" .  "<br>";
+}
 
-    //mostrar la estructura de la variable
-    var_dump($variable);
-    echo"<br>";
+//Ejercicio N°3
+$n3 = 9;
 
-    //Operaciones Aritmeticas
-    echo "Operaciones Aritmeticas";
-    echo "<br>";
+if ($n3 >= 10 || $n3 < 2) {
+    echo "El número ingresado es mayor o igual a 10 o menor a 2" . "<br>";
+} else {
+    echo "El número ingresado no pudo ser validado" . "<br>";
+}
 
-    //defino dos variables enteras
-    $numero1 = 12;
-    $numero2 = 6;
-    echo "número 1: " . $numero1;
-    echo "<br>";
-    echo "número 2: " . $numero2;
-    echo "<br>";
+//Ejercicio N°4
+$numero1 = 8; 
+$numero2 = 4;
 
-    //SUMA
-    echo "Suma: " . $numero1 + $numero2;
-    echo "<br>";
-
-    //RESTA
-    echo "Resta: " . $numero1 - $numero2;
-    echo "<br>";
-
-    //MULTIPLICACION
-    echo "Multiplicación: " . $numero1 * $numero2;
-    echo "<br>";
-
-    //DIVISION
-    echo "División: " . $numero1 / $numero2;
-    echo "<br>";
-
-    //RESTO DIVISION    
-    echo "Resto División: " . $numero1 % $numero2;
-    echo "<br>";
-
-    //Transformación de grados Celcius a Fahrenheit
-    echo "Pasaje de °C a °F";
-    echo "<br>";
-        //fórmula para Celcius-Fahrenheit: (°C * 9/5) + 32
-    //defino los grados Celcius
-    $grados_celcius = 20;
-    echo "Grados Celcius: ". $grados_celcius;
-    echo "<br>";
+if ($numero1 > $numero2) {
+    $suma = $numero1 + $numero2;
+    $resta = $numero1 - $numero2;
+    echo "La suma de los números es: " . $suma . "<br>";
+    echo "La resta de los números es: " . $resta . "<br>";
+} elseif ($numero2 > $numero1) {
+    $multiplicacion = $numero1 * $numero2;
+    $division_entera = (int)($numero1 / $numero2);  //reveer
+    $resto = $numero1 % $numero2;
+    echo "La multiplicación de los números es: " . $multiplicacion . "<br>";
+    echo "La división entera de los números es: " . $division_entera . "<br>";
+    echo "El resto de la división es: " . $resto . "<br>";
+} else {
+    echo "Los números ingresados son iguales";
+}
 
 
-    //calculo grados Fahrenheit
-    //echo "grados Fahrenheit:  ";  //forma de agregar texto 1
-    echo "Grados Fahrenheit:  " . ($grados_celcius * (9/5)) + 32;   //forma de agregar texto 2 (con el ".")
-    echo "<br>";
-
-    //Calculo del perímetro y área de un rectángulo
-    echo "Perímetro y área de un rectángulo";
-    echo "<br>";
-
-    //Datos del rectángulo
-    $baseRectangulo = 18; 
-    $alturaRectangulo = 12;
-
-    //Cálculo del área del rectángulo
-    $areaRectangulo = $baseRectangulo * $alturaRectangulo;
-    echo "Área: " . $areaRectangulo;
-    echo "<br>";
-
-    //Cálculo del perímetro del rectángulo
-    $perimetroRectangulo = 2 * ($baseRectangulo + $alturaRectangulo);
-    echo "Perímetro: " . $perimetroRectangulo;
-    echo "<br>";
-
-
-    //Calculo del perímetro y área de un círculo
-    echo "Perímetro y área de un círculo";
-    echo "<br>";
-
-    //Datos del círculo
-    $radioCirculo = 30;
-    $pi = 3.1415;
-
-    //Calculo el área del círculo
-    $areaCirculo = $pi * ($radioCirculo ** 2);
-    echo "Área: " . $areaCirculo;
-    echo "<br>";
-
-    //Calculo el perímetro del círculo
-    $perimetroCirculo = 2 * $pi * $radioCirculo;
-    echo "Perímetro: " . $perimetroCirculo;
-    echo "<br>";
-
-    
 ?>
+
